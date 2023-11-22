@@ -3,3 +3,84 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --icon-background:#CA6D81;
+    --primary-background: #FFFFFF;
+    --primary-text: #737373;
+    --body-text: #B5596D;
+    --heading-text: #EC879C;
+    --active-background: #FFF9F3;
+    --qr-background: #F3F3F3;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: url("assets/background-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 2em 1em;
+}
+
+.header-imgs {
+    position: relative;
+    flex-basis: 45%;
+}
+
+.header-text {
+    flex-basis: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.profile-img {
+    width: 70%;
+    max-width: 250px;
+    border-radius: 50%;
+    border: 3px solid var(--primary-background);
+}
+
+.logo {
+    width: 25%;
+    position: absolute;
+    top: 60%;
+    right: 26%
+}
+
+h1, h2 {
+    color: var(--body-text);
+}
+
+h1 {
+    font-size: 1.25rem;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: .5em 0;
+}
+.social-icon {
+    width: 13%;
+    fill: var(--icon-background);
+    transition: fill .3s ease-in-out;
+}
+
+.social-icon:hover {
+    cursor: pointer;
+    fill: var(--primary-background);
+}
